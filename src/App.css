@@ -1,0 +1,63 @@
+.page-banner {
+    background-image: url(/src/assets/images/about-banner.avif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 80px 0px;
+    color: #fff;
+}
+.banner-text{
+    width: 50%;
+}
+.who-we{
+    padding: 80px 0px;
+}
+.who-we-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.who-content h2{
+    color: #ff6f61;
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+.who-content{
+    width: 50%;
+}
+.who-content p{
+    margin-bottom: 10px;
+}
+.who-image{
+    width: 45%;
+}
+.who-image img{
+    width: 100%;
+    border-radius: 15px;
+}
+.our-mission h5{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.our-mission p{
+    padding: 20px 0px;
+}
+.our-mission ul{
+    list-style-type: none;
+}
+.our-mission ul li{
+    position: relative;
+    margin-left: 30px;
+}
+.our-mission ul li::before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    height: 8px;
+    width: 8px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    top: 9px;
+}
+.special-text{
+    color: #ff6f61;
+}

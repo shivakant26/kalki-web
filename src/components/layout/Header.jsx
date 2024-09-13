@@ -1,30 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import SiteLogo from "../common/SiteLogo";
 import { Link } from "react-router-dom";
+import Hamburger from "hamburger-react";
+import SiteMenu from "../common/SiteMenu";
 const Header = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <header>
       <div className="center-wr">
         <div className="header">
           <SiteLogo />
-          <div className="menu">
-            <ul>
-              <li>
-                <Link to="">Home</Link>
-              </li>
-              <li>
-                <a href="">Service</a>
-              </li>
-              <li>
-                <a href="">About</a>
-              </li>
-              <li>
-                <Link to="/contact-us">Contact Us</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="cousult-btn">
-            <a href="#">Free Consultation</a>
+          <SiteMenu className="menu" />
+          <div className="mobile-menu">
+            <Hamburger  easing="ease-in" toggled={isOpen} toggle={setOpen} />
+            {isOpen && <SiteMenu className="mobile-menu-item" />}
           </div>
         </div>
       </div>
