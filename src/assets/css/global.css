@@ -79,8 +79,9 @@ header{
 .drop-down{
   position: absolute;
     background: #fff;
+    z-index: 55;
     width: 220px;
-    top: 58px;
+    top: 56px;
     padding: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;

@@ -61,3 +61,19 @@
 .special-text{
     color: #ff6f61;
 }
+
+/* bookkeeping */
+.round{
+    border-radius: 12px;
+}
+.book-keeping,.payroll{
+    width: 50%;
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.text-light{
+    color: #a09f9f;
+}

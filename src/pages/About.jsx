@@ -1,20 +1,10 @@
 import React from "react";
 import AboutImage from "../assets/images/work-togather.avif";
+import PageBanner from "../components/common/PageBanner";
 const About = () => {
   return (
     <>
-      <div className="page-banner">
-        <div className="center-wr">
-          <div className="banner-text">
-            <h1>About Us</h1>
-            <p>
-              Have questions? Click the link below for our contact form or call
-              us at 123654021 and let us show you how our expertise can save you
-              money in the long run.
-            </p>
-          </div>
-        </div>
-      </div>
+      <PageBanner bannerTitle="About Us"/>
       <div className="who-we">
         <div className="center-wr">
           <div className="who-we-inner">
