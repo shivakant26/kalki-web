@@ -29,3 +29,50 @@ export const servicesData = [
       icons:TfiReload
     }
   ];
+
+
+ export const siteMenuItem = [
+    {
+      label:'Home',
+      slug:"",
+      dropdown : false,
+
+    },
+    {
+      label:'Service',
+      slug:"",
+      dropdown : true,
+      dropDownItem :[
+        {
+          label:"bookkepping",
+          slug:"/service/book-keeping"
+        },
+        {
+          label:"payroll",
+          slug:"/service/payroll"
+        },
+        {
+          label:"tax",
+          slug:"/service/tax"
+        },
+        {
+          label:"bill pay",
+          slug:"/service/bill-pay"
+        },
+        {
+          label:"data maigration",
+          slug:"/service/data-maigration"
+        }
+      ]
+    },
+    {
+      label:'About',
+      slug:"/about",
+      dropdown : false,
+    },
+    {
+      label:'Contact Us',
+      slug:"/contact-us",
+      dropdown : false,
+    }
+  ]

@@ -5,6 +5,7 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -83,21 +84,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer-newsletter">
-        <h3 className="footer-heading">Newsletter Signup</h3>
-        <form onSubmit={handleNewsletterSignup} className="newsletter-form">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="newsletter-input"
-          />
-          <button type="submit" className="newsletter-button">
-            Subscribe
-          </button>
-        </form>
+      <div className="footer-copyright">
+        <div className="center-wr">
+          <p>
+            Copyright &copy; {new Date().getFullYear()} Your <Link to="/">Kalki Group</Link>. All
+            Rights Reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );

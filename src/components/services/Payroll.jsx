@@ -1,6 +1,6 @@
 import React from "react";
-import PageBanner from "./common/PageBanner";
-import PayrollImage from "../assets/images/work-togather.avif";
+import PageBanner from "../common/banners/PageBanner";
+import PayrollImage from "../../assets/images/work-togather.avif";
 const Payroll = () => {
   return (
     <>

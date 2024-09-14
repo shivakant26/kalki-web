@@ -1,3 +1,6 @@
+.w-50{
+    width: 50%;
+}
 .page-banner {
     background-image: url(/src/assets/images/about-banner.avif);
     background-repeat: no-repeat;
@@ -70,6 +73,9 @@
     width: 50%;
     margin: 0 auto;
     padding: 80px 0px;
+}
+.payroll img{
+    width: 100%;
 }
 .mb-20{
     margin-bottom: 20px;

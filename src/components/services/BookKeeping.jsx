@@ -1,9 +1,9 @@
 import React from "react";
-import PageBanner from "./common/PageBanner";
+import PageBanner from "../common/banners/PageBanner";
 const BookKeeping = () => {
   return (
     <>
-      <PageBanner bannerTitle="Book Keeping" />
+      <PageBanner bannerTitle="BookKeeping" />
       <div className="book-keeping">
           <h3 className="mb-20">With us, it's personal </h3>
           <p className="mb-20 text-light">

@@ -4,7 +4,7 @@ const SiteLogo = () => {
       <h4>
         <a href="">Kalki</a>
       </h4>
-      <span>passion | dedication | Excellence</span>
+      <span>Passion | Dedication | Excellence</span>
     </div>
   );
 };

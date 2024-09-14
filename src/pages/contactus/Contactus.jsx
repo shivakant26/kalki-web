@@ -1,19 +1,21 @@
 import React, { useState } from "react";
 import "./ContactUs.css";
 import SectionHeading from "../../components/common/SectionHeading";
-import { FaLocationDot , FaPhone  } from "react-icons/fa6";
+import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
+import { useForm } from "react-hook-form";
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    contactNo: "",
-    message: "",
-    serviceInquiry: false,
-    consentSMS: false,
-  });
+  const [formData , setFormData] = useState({
+    consentSMS: "",
+    serviceInquiry :""
+  })
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
 
   const handleChange = (event) => {
     const { name, value, type, checked } = event.target;
@@ -23,10 +25,8 @@ const ContactUs = () => {
     });
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+  const onSubmit = (data) => {
+    alert(JSON.stringify(data));
   };
 
   return (
@@ -45,66 +45,109 @@ const ContactUs = () => {
               fill out this form and we’ll be in touch.
             </p>
             <div className="address">
-                <div className="address-group">
-                    <span><FaLocationDot /></span>
-                    <p>1234 Street Name
-                <br />
-                City, State, ZIP Code</p>
-                </div>
-                <div className="address-group">
-                    <span><FaPhone /></span>
-                    <p>(123) 456-7890</p>
-                </div>
-                <div className="address-group">
-                    <span><IoMdMail /></span>
-                    <p>info@example.com</p>
-                </div>
+              <div className="address-group">
+                <span>
+                  <FaLocationDot />
+                </span>
+                <p>
+                  1234 Street Name
+                  <br />
+                  City, State, ZIP Code
+                </p>
+              </div>
+              <div className="address-group">
+                <span>
+                  <FaPhone />
+                </span>
+                <p>(123) 456-7890</p>
+              </div>
+              <div className="address-group">
+                <span>
+                  <IoMdMail />
+                </span>
+                <p>info@kalki.com</p>
+              </div>
             </div>
           </div>
           <div className="column column-form">
             <h2>Get in Touch</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-row">
-                <input
-                  type="text"
-                  name="firstName"
-                  placeholder="First Name"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  required
-                />
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last Name"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  required
-                />
+                <div className="form-field w-50">
+                  <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First Name"
+                    {...register("firstName", {
+                      required: true,
+                      maxLength: 20,
+                      pattern: /^[A-Za-z]+$/i,
+                    })}
+                  />
+                  {errors?.firstName?.type === "required" && (
+                    <p className="error">Required*</p>
+                  )}
+                </div>
+                <div className="form-field w-50">
+                  <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    {...register("lastName", {
+                      required: true,
+                      maxLength: 20,
+                      pattern: /^[A-Za-z]+$/i,
+                    })}
+                  />
+                  {errors?.lastName?.type === "required" && (
+                    <p className="error">Required*</p>
+                  )}
+                </div>
               </div>
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-              <input
-                type="text"
-                name="contactNo"
-                placeholder="Contact No"
-                value={formData.contactNo}
-                onChange={handleChange}
-                required
-              />
-              <textarea
-                name="message"
-                placeholder="Message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
+              <div className="form-field">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  {...register("email", {
+                    required: true,
+                    maxLength: 20,
+                    pattern: /^[A-Za-z]+$/i,
+                  })}
+                />
+                {errors?.email?.type === "required" && (
+                  <p className="error">Required*</p>
+                )}
+              </div>
+              <div className="form-field">
+                <input
+                  type="text"
+                  name="contactNo"
+                  placeholder="Contact No"
+                  {...register("contactNo", {
+                    required: true,
+                    maxLength: 20,
+                    pattern: /^[A-Za-z]+$/i,
+                  })}
+                />
+                {errors?.contactNo?.type === "required" && (
+                  <p className="error">Required*</p>
+                )}
+              </div>
+              <div className="form-field">
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  {...register("message", {
+                    required: true,
+                    maxLength: 20,
+                    pattern: /^[A-Za-z]+$/i,
+                  })}
+                ></textarea>
+                {errors?.message?.type === "required" && (
+                  <p className="errors">Required*</p>
+                )}
+              </div>
               <div className="checkbox-group">
                 <div className="terms">
                   <span className="span-chek">
@@ -113,7 +156,6 @@ const ContactUs = () => {
                       name="serviceInquiry"
                       checked={formData.serviceInquiry}
                       onChange={handleChange}
-                      required
                     />
                   </span>
                   <span>
@@ -131,12 +173,11 @@ const ContactUs = () => {
                       name="consentSMS"
                       checked={formData.consentSMS}
                       onChange={handleChange}
-                      required
                     />
                   </span>
                   <span>
                     I consent to receive SMS messages and agree with the
-                    <a  href="#"> Terms of Service.</a>
+                    <a href="#"> Terms of Service.</a>
                   </span>
                 </div>
               </div>

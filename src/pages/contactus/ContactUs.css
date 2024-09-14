@@ -63,10 +63,20 @@ textarea:focus{
     outline: none;
 }
 textarea {
-  height: 100px;
   resize: none;
 }
-
+.form-field{
+  position: relative;
+}
+.error,.errors{
+  position: absolute;
+  top: 52px;
+  font-size: 12px;
+  color: tomato;
+}
+.errors{
+  top: 75px;
+}
 .terms {
   display: flex;
   align-items: flex-start;

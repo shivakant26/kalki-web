@@ -1,5 +1,5 @@
 import React from "react";
-import PageBanner from "./common/PageBanner";
+import PageBanner from "../common/banners/PageBanner";
 const Tax = () =>{
     return(
         <>

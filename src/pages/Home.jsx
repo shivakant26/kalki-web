@@ -7,7 +7,7 @@ import CallToAction from "../components/CalltoAction";
 const HomePage = () => {
   return (
     <>
-      <section class="banner-section">
+      <section className="banner-section">
         <div className="center-wr">
           <div class="hero-content">
             <h1>Your Finances, Our Priority</h1>

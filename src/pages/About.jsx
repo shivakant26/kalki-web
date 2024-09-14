@@ -1,6 +1,6 @@
 import React from "react";
 import AboutImage from "../assets/images/work-togather.avif";
-import PageBanner from "../components/common/PageBanner";
+import PageBanner from "../components/common/banners/PageBanner";
 const About = () => {
   return (
     <>
