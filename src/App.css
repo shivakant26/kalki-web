@@ -1,85 +1,161 @@
-.w-50{
-    width: 50%;
+.w-50 {
+  width: 50%;
 }
 .page-banner {
-    background-image: url(/src/assets/images/about-banner.avif);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 80px 0px;
-    color: #fff;
+  background-image: url(/src/assets/images/about-banner.avif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 80px 0px;
+  color: #fff;
 }
-.banner-text{
-    width: 50%;
+.banner-text {
+  width: 50%;
 }
-.who-we{
-    padding: 80px 0px;
+.who-we {
+  padding: 80px 0px;
 }
-.who-we-inner{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.who-we-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.who-content h2{
-    color: #ff6f61;
-    margin-bottom: 30px;
-    font-size: 34px;
+.who-content h2 {
+  color: #ff6f61;
+  margin-bottom: 30px;
+  font-size: 34px;
 }
-.who-content{
-    width: 50%;
+.who-content {
+  width: 50%;
 }
-.who-content p{
-    margin-bottom: 10px;
+.who-content p {
+  margin-bottom: 10px;
 }
-.who-image{
-    width: 45%;
+.who-image {
+  width: 45%;
 }
-.who-image img{
-    width: 100%;
-    border-radius: 15px;
+.who-image img {
+  width: 100%;
+  border-radius: 15px;
 }
-.our-mission h5{
-    font-size: 19px;
-    margin-bottom: 10px;
+.our-mission h5 {
+  font-size: 19px;
+  margin-bottom: 10px;
 }
-.our-mission p{
-    padding: 20px 0px;
+.our-mission p {
+  padding: 20px 0px;
 }
-.our-mission ul{
-    list-style-type: none;
+.our-mission ul {
+  list-style-type: none;
 }
-.our-mission ul li{
-    position: relative;
-    margin-left: 30px;
+.our-mission ul li {
+  position: relative;
+  margin-left: 30px;
 }
-.our-mission ul li::before{
-    content: "";
-    position: absolute;
-    left: -20px;
-    height: 8px;
-    width: 8px;
-    background-color: #cccccc;
-    border-radius: 50%;
-    top: 9px;
+.our-mission ul li::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  height: 8px;
+  width: 8px;
+  background-color: #cccccc;
+  border-radius: 50%;
+  top: 9px;
 }
-.special-text{
-    color: #ff6f61;
+.special-text {
+  color: #ff6f61;
 }
 
 /* bookkeeping */
-.round{
-    border-radius: 12px;
+.round {
+  border-radius: 12px;
 }
-.book-keeping,.payroll{
-    width: 50%;
-    margin: 0 auto;
-    padding: 80px 0px;
+.book-keeping,
+.payroll,.privacy-policy{
+  width: 50%;
+  margin: 0 auto;
+  padding: 80px 0px;
 }
-.payroll img{
-    width: 100%;
+.payroll img {
+  width: 100%;
 }
-.mb-20{
-    margin-bottom: 20px;
+.mb-20 {
+  margin-bottom: 20px;
 }
-.text-light{
-    color: #a09f9f;
+.text-center{
+  text-align: center;
+}
+.text-light {
+  color: #a09f9f;
+}
+
+/* pricing css */
+.pricing {
+  padding: 150px 0px;
+}
+
+  .pricing-card-container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch; 
+    flex-wrap: nowrap; 
+  }
+
+  .pricing-card {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    width: 33%;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 500px;
+  }
+  .pricing-card:nth-child(2) {
+    scale: 1.1 1.3;
+    background: #fff ;
+    border: 1px solid #ff6f61;
+}
+.pricing-card h2 {
+  font-size: 39px;
+  text-transform: capitalize;
+  color: #ff6f61;
+}
+.pricing p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.lg-ft {
+  font-size: 32px;
+  color: #000;
+  font-weight: 800;
+}
+.pricing-card ul {
+  list-style-type: none;
+  background-color: #fff9f9;
+  padding: 30px;
+}
+.pricing-card ul li {
+  text-align: left;
+  margin-bottom: 15px;
+  display: flex;
+    gap: 12px;
+}
+.card-heading{
+    padding: 30px;
+}
+
+/* career */
+.career{
+    padding:80px 0px
+}
+
+/* loading */
+.loading{
+  display: flex;
+  flex-wrap: wrap;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
 }

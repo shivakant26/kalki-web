@@ -4,6 +4,7 @@ import SectionHeading from "../../components/common/SectionHeading";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   const [formData , setFormData] = useState({
@@ -163,7 +164,7 @@ const ContactUs = () => {
                     message or solicitation. By clicking “Submit”, I acknowledge
                     and agree to the creation of an account and to the
                     <a href=""> Terms of Service</a> and
-                    <a href=""> Privacy Policy.</a>
+                    <Link to="/privacy-policy"> Privacy Policy.</Link>
                   </span>
                 </div>
                 <div className="terms">

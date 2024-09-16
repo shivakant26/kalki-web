@@ -62,7 +62,7 @@ header{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap:90px;
+    gap:40px;
 }
 .menu ul li a{
     color: black;
@@ -161,6 +161,7 @@ header{
   }
   .services-heading {
     font-size: 2.5rem;
+    text-transform: capitalize;
     margin-bottom: 10px;
   }
   

@@ -44,7 +44,7 @@ export const servicesData = [
       dropdown : true,
       dropDownItem :[
         {
-          label:"bookkepping",
+          label:"bookkeeping",
           slug:"/service/book-keeping"
         },
         {
@@ -73,6 +73,16 @@ export const servicesData = [
     {
       label:'Contact Us',
       slug:"/contact-us",
+      dropdown : false,
+    },
+    {
+      label:'Pricing',
+      slug:"/pricing",
+      dropdown : false,
+    },
+    {
+      label:'Career',
+      slug:"/career",
       dropdown : false,
     }
   ]

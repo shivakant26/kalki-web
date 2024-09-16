@@ -59,7 +59,7 @@ const SiteMenu = ({ className, isMobileMenuOpen, closeMobileMenu }) => {
         })}
       </ul>
       <div className="cousult-btn">
-        <Link to="/contact-us">Free Consultation</Link>
+        <Link to="/contact-us" onClick={handleMenuClick}>Free Consultation</Link>
       </div>
     </div>
   );
