@@ -41,8 +41,8 @@
   }
   .column-text,
   .column-form {
-    width: 100%;
-  }
+    width: 100% !important;
+  } 
   .menu ul {
     gap: 23px;
 }
