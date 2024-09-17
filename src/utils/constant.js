@@ -86,3 +86,65 @@ export const servicesData = [
       dropdown : false,
     }
   ]
+
+  export const PricingData = [
+    {
+      id:1,
+      labelName : "Tax",
+      pricingStart : "120",
+      facility:[
+        "Preparation of Federal and State tax returns",
+        "Tax Planning/Strategizing",
+        "Preparation of business property tax return"
+      ]
+    },
+    {
+      id:2,
+      labelName : "Bookkeeping",
+      pricingStart : "199",
+      facility:[
+        "Bank, Credit Card, and Loan Reconciliations",
+        "Monthly Financial Statements",
+        "Dedicated Bookkeeper and Account Manager"
+      ],
+      popularPlans:[
+        {
+          plan:"199",
+          mt : "150",
+          sf : "monthly",
+          mea : "yes",
+          bankCCR : "yes",
+          coa:"yes",
+          tbtc:"no"
+        },
+        {
+          plan:"399",
+          mt : "250",
+          sf : "monthly",
+          mea : "yes",
+          bankCCR : "yes",
+          coa:"yes",
+          tbtc:"yes"
+        },
+        {
+          plan:"699",
+          mt : "350",
+          sf : "monthly",
+          mea : "yes",
+          bankCCR : "yes",
+          coa:"yes",
+          tbtc:"yes"
+        },
+      ]
+    },
+    {
+      id:3,
+      labelName : "Payroll",
+      pricingStart : "120",
+      facility:[
+        "Direct Deposit",
+        "Federal and State Payroll Taxes",
+        "Employee Portal"
+      ]
+    },
+  ]

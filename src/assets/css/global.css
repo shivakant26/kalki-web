@@ -232,7 +232,20 @@ header{
   .learn-more:hover {
     color: #ff4a39;
   }
-  
+
+  .company-tyup{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content:center;
+    align-items: center;
+    padding: 50px 0px;
+  }
+  .company-tyup img{
+    width: 53%;
+    object-fit: contain;
+    /* background-color: #fff; */
+  }
   /* why choose us */
   /* WhyChooseUs.css */
 .why-choose-us-section {
@@ -474,6 +487,7 @@ header{
     color: #4141d9;
   }
   /* page not found */
+
   .page-not-found{
     display: flex;
     flex-wrap: wrap;
@@ -482,4 +496,13 @@ header{
     gap: 10px;
     justify-content: center;
     align-items: center;
+  }
+
+  .not-found-btn{
+    background-color: #2e2ea2;
+    color: #fff;
+    padding: 10px 20px;
+    border:none;
+    outline: none;
+    border-radius: 8px;
   }

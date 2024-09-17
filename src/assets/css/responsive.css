@@ -114,6 +114,13 @@
   .logo {
     width: 77%;
   }
+  .hero-content h1 {
+    font-size: 30px;
+    text-align: center;
+}
+.hero-content {
+  padding: 7px 28px;
+}
 } /** 320 **/
 
 @media only screen and (max-width: 320px) {

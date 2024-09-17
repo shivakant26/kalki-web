@@ -7,7 +7,7 @@ const PageNotFound = () => {
       <h1>Oops!</h1>
       <h2>404</h2>
       <p>Page Not Found</p>
-      <button onClick={()=>navigate("/")}>Back to Home</button>
+      <button className="not-found-btn" onClick={()=>navigate("/")}>Back to Home</button>
     </div>
   );
 };

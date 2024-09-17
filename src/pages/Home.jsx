@@ -3,6 +3,7 @@ import { servicesData } from "../utils/constant";
 import SectionHeading from "../components/common/SectionHeading";
 import HowItWorks from "../components/HowItWork";
 import CallToAction from "../components/CalltoAction";
+import CompanySlider from "../components/services/ComapnySlider";
 
 const HomePage = () => {
   return (
@@ -42,6 +43,9 @@ const HomePage = () => {
                 </a>
               </div>
             ))}
+          </div>
+          <div className="company-tyup">
+            <CompanySlider />
           </div>
         </div>
       </section>
