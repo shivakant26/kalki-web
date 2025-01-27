@@ -3,7 +3,7 @@ import xeroImg from "../../assets/images/xero.png";
 import reckonImg from "../../assets/images/rackon1.png";
 import myobImg from "../../assets/images/myob1.png";
 import freshBookImg from "../../assets/images/freshbook1.png";
-import zohoImg from "../../assets/images/zoho-logo.png";
+// import zohoImg from "../../assets/images/zoho-logo.png";
 import oddoImg from "../../assets/images/oddo1.png";
 import netsuitsImg from "../../assets/images/netsuits1.png";
 import jazImg from "../../assets/images/jaz1.png";
@@ -52,9 +52,9 @@ const CompanySlider = () => {
       <SwiperSlide>
         <img src={freshBookImg} alt="company-img" />
       </SwiperSlide>
-      <SwiperSlide>
+      {/* <SwiperSlide>
         <img src={zohoImg} alt="company-img" />
-      </SwiperSlide>
+      </SwiperSlide> */}
       <SwiperSlide>
         <img src={oddoImg} alt="company-img" />
       </SwiperSlide>
