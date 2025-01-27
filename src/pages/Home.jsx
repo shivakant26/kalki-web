@@ -13,7 +13,7 @@ const HomePage = () => {
           <div class="hero-content">
             <h1>Your Finances, Our Priority</h1>
             <p>
-              At Kalki Solution, we offer reliable bookkeeping, payroll
+              At Kripri Solution Inc, we offer reliable bookkeeping, payroll
               management, tax solutions, and bill payment services to ensure
               your business runs smoothly and profitably. Let us handle the
               numbers while you focus on growth.

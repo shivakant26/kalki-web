@@ -38,7 +38,7 @@ const ContactUs = () => {
           <div className="column column-text">
             <h1>
               Start Conversation With
-              <br /> Kalki Group
+              <br /> Kripri India inc
             </h1>
             <p>
               You can count on us for professional, timely and reliable

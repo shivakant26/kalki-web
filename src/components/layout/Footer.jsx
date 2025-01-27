@@ -20,7 +20,7 @@ const Footer = () => {
     <footer className="footer-section">
       <div className="footer-container">
         <div className="footer-column logo-column">
-          <h1 className="footer-logo">Kalki</h1>
+          <h1 className="footer-logo">Kripri India Inc.</h1>
           <p className="footer-description">
             Passion | Dedication | Excellence
           </p>
@@ -87,7 +87,7 @@ const Footer = () => {
       <div className="footer-copyright">
         <div className="center-wr">
           <p>
-            Copyright &copy; {new Date().getFullYear()} Your <Link to="/">Kalki Group</Link>. All
+            Copyright &copy; {new Date().getFullYear()} Your <Link to="/">Kripri India Inc </Link>. All
             Rights Reserved.
           </p>
         </div>

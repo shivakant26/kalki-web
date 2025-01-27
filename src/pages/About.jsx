@@ -11,7 +11,7 @@ const About = () => {
             <div className="who-content">
               <h2>Who We Are</h2>
               <p>
-                <span className="special-text">kalki Group </span>is your all-in-one small business solution for
+                <span className="special-text">Kripri India Inc. </span>is your all-in-one small business solution for
                 accounting, bookkeeping, payroll, bill pay, and tax planning and
                 preparation. We're so much more than just a bookkeeping service.
               </p>
@@ -54,7 +54,7 @@ const About = () => {
                   <li>And Much, Much More</li>
                 </ul>
                 <p>
-                  When you become a <span className="special-text">Kalki Group </span>client, you will have access
+                  When you become a <span className="special-text">Kripri India Inc. </span>client, you will have access
                   to a dedicated team that will look after your business
                   interests as if they were their own. Costs are modest and
                   always agreed to in advance, so there are never any surprise
